@@ -1,0 +1,50 @@
+.search-wrapper{
+    padding: 1%;
+    margin: 1%;
+}
+.search-box-2 {
+    display: flex;
+    justify-content: center;
+    width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 3%;
+    background-color: #c5c5c5de;
+  }
+  
+  .search-box-2 input{
+    width: 60%;
+    margin: 2%;
+  }
+  
+  .search-box-2 .btn{
+    width: 40%;
+    margin: 2%;
+  }
+
+  .restCard{
+    width: 19rem;
+    float: left;
+    padding: 0 10px;
+    margin: 20px;
+    border-radius: 5px;
+    -webkit-box-shadow: 1px 1px 40px 1px #A6A6A6;
+    box-shadow: 1px 1px 40px 1px #A6A6A6;
+  }
+
+  .menuBtn{
+    margin-bottom: 10px;
+  }
+
+  .restCard p{
+    font-style: italic;
+    overflow:hidden;
+    white-space:nowrap;
+    text-overflow:ellipsis;
+    width:265px;
+  }
+
+  .results{
+    margin-top: 20px;
+  }
+  

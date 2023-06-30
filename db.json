@@ -1,0 +1,840 @@
+{
+  "users": [
+    {
+      "email": "sk@yopmail.com",
+      "password": "sk123",
+      "id": 1
+    },
+    {
+      "email": "sk1@yopmail.com",
+      "password": "sk123",
+      "id": 2
+    },
+    {
+      "email": "swapikhande@cmail.com",
+      "password": "sk123",
+      "id": 3
+    },
+    {
+      "email": "new@yopmail.com",
+      "password": "sk123",
+      "id": 4
+    },
+    {
+      "email": "ss@gmail.com",
+      "password": "ss",
+      "id": 5
+    },
+    {
+      "email": "ssk@gmail.com",
+      "password": "ssk",
+      "id": 6
+    },
+    {
+      "email": "aa@yopmail.com",
+      "password": "aa",
+      "id": 7
+    },
+    {
+      "email": "aa@cmail.com",
+      "password": "aa",
+      "id": 8
+    },
+    {
+      "email": "ss@fmail.com",
+      "password": "ss",
+      "id": 9
+    },
+    {
+      "email": "ss@yopmail.com",
+      "password": "sssk",
+      "customerType": "User",
+      "id": 10
+    },
+    {
+      "email": "ab@yopmail.com",
+      "password": "abcd",
+      "customerType": "User",
+      "id": 11
+    },
+    {
+      "email": "zx@yopmail.com",
+      "password": "zxcv",
+      "restaurantName": "xyz restaurant",
+      "restaurantAddr": "Balewadi highstreet, Pune",
+      "fssaiNo": "1234567890",
+      "customerType": "Restaurant Owner",
+      "id": 12
+    },
+    {
+      "email": "test@yopmail.com",
+      "password": "test12",
+      "customerType": "User",
+      "id": 13
+    },
+    {
+      "email": "sk12@yopmail.com",
+      "password": "ssk12",
+      "restaurantName": "Hotel Vaishali, FC Road, Pune",
+      "restaurantAddr": "FC Road, Pune",
+      "fssaiNo": "1234567890",
+      "customerType": "Restaurant Owner",
+      "id": 14
+    },
+    {
+      "email": "tset@yopmail.com",
+      "password": "tset",
+      "customerType": "User",
+      "id": 15
+    },
+    {
+      "email": "dmc@yopmail.com",
+      "password": "dmcc",
+      "restaurantName": "DMC Hotel",
+      "restaurantAddr": "Bengalore",
+      "fssaiNo": "1234567890",
+      "customerType": "Restaurant Owner",
+      "id": 16
+    },
+    {
+      "email": "dmc@yopmail.com",
+      "password": "dmcc",
+      "restaurantName": "DMC Hotel",
+      "restaurantAddr": "Bengalore",
+      "fssaiNo": "1234567890",
+      "customerType": "Restaurant Owner",
+      "id": 17
+    },
+    {
+      "email": "dmc@yopmail.com",
+      "password": "dmcc",
+      "restaurantName": "DMC Hotel",
+      "restaurantAddr": "Bengalore",
+      "fssaiNo": "1234567890",
+      "customerType": "Restaurant Owner",
+      "id": 18
+    }
+  ],
+  "restaurants": [
+    {
+      "id": 1,
+      "name": "ABC Hotel",
+      "address": "Professor Chowk, Ahmednagar",
+      "bestFor": "North Indian, Italian, Continental, Bar Food, Desserts, Beverages",
+      "menu": [
+        {
+          "id": 1,
+          "dishName": "Veg Sandwich",
+          "price": 100
+        },
+        {
+          "id": 2,
+          "dishName": "Veg Maratha",
+          "price": 200
+        },
+        {
+          "id": 3,
+          "dishName": "Aloo Paratha",
+          "price": 150
+        },
+        {
+          "id": 4,
+          "dishName": "Roti",
+          "price": 20
+        },
+        {
+          "id": 5,
+          "dishName": "Ice-Cream",
+          "price": 20
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "name": "Sai Hotel",
+      "address": "Savedi, Ahmednagar",
+      "bestFor": "Finger Food, Chinese, Pizza, Italian, North Indian, Desserts",
+      "menu": [
+        {
+          "id": 1,
+          "dishName": "Paneer Handi",
+          "price": 100
+        },
+        {
+          "id": 2,
+          "dishName": "Veg Mughlai",
+          "price": 200
+        },
+        {
+          "id": 3,
+          "dishName": "Chinese",
+          "price": 150
+        },
+        {
+          "id": 4,
+          "dishName": "Thai Special",
+          "price": 20
+        },
+        {
+          "id": 5,
+          "dishName": "Cold Coffee",
+          "price": 20
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "name": "Dominos",
+      "address": "Deccan, Pune",
+      "bestFor": "European, Asian, Continental, Italian, Desserts",
+      "menu": [
+        {
+          "id": 1,
+          "dishName": "Paneer Bhurji",
+          "price": 100
+        },
+        {
+          "id": 2,
+          "dishName": "Veg Jaipuri",
+          "price": 200
+        },
+        {
+          "id": 3,
+          "dishName": "Fried Rice",
+          "price": 150
+        },
+        {
+          "id": 4,
+          "dishName": "Veg Loaded",
+          "price": 20
+        },
+        {
+          "id": 5,
+          "dishName": "Burger",
+          "price": 20
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "name": "KFC",
+      "address": "Kothrud, Pune",
+      "bestFor": "Chinese, Fast Food, Pasta, North Indian, BBQ, Beverages",
+      "menu": [
+        {
+          "id": 1,
+          "dishName": "KFC Special",
+          "price": 100
+        },
+        {
+          "id": 2,
+          "dishName": "Veg Burger",
+          "price": 200
+        },
+        {
+          "id": 3,
+          "dishName": "French Fries",
+          "price": 150
+        },
+        {
+          "id": 4,
+          "dishName": "Hot Tea",
+          "price": 20
+        },
+        {
+          "id": 5,
+          "dishName": "Mastani",
+          "price": 20
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "name": "Hotel Grand",
+      "address": "Juhu, Mumbai",
+      "bestFor": "Thai, Cantonese, Japanese",
+      "menu": [
+        {
+          "id": 1,
+          "dishName": "Paneer Bhurji",
+          "price": 100
+        },
+        {
+          "id": 2,
+          "dishName": "Veg Jaipuri",
+          "price": 200
+        },
+        {
+          "id": 3,
+          "dishName": "Fried Rice",
+          "price": 150
+        },
+        {
+          "id": 4,
+          "dishName": "Veg Loaded",
+          "price": 20
+        },
+        {
+          "id": 5,
+          "dishName": "Burger",
+          "price": 20
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "name": "Hotel Vaishali",
+      "address": "FC Road, Pune",
+      "bestFor": "Continental, Modern Indian, Asian, Italian, Finger Food, Beverages",
+      "menu": [
+        {
+          "id": 1,
+          "dishName": "Veg Sandwich",
+          "price": 100
+        },
+        {
+          "id": 2,
+          "dishName": "Veg Maratha",
+          "price": 200
+        },
+        {
+          "id": 3,
+          "dishName": "Aloo Paratha",
+          "price": 150
+        },
+        {
+          "id": 4,
+          "dishName": "Roti",
+          "price": 20
+        },
+        {
+          "id": 5,
+          "dishName": "Ice-Cream",
+          "price": 20
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "name": "Hotel Hyatt",
+      "address": "Dadar, Mumbai",
+      "bestFor": "Cafe, European, Modern Indian, Chinese, Beverages, Desserts",
+      "menu": [
+        {
+          "id": 1,
+          "dishName": "Hyatt Special",
+          "price": 100
+        },
+        {
+          "id": 2,
+          "dishName": "Veg Burger",
+          "price": 200
+        },
+        {
+          "id": 3,
+          "dishName": "French Fries",
+          "price": 150
+        },
+        {
+          "id": 4,
+          "dishName": "Hot Tea",
+          "price": 20
+        },
+        {
+          "id": 5,
+          "dishName": "Mastani",
+          "price": 20
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "name": "Vitara",
+      "address": "Andheri, Mumbai",
+      "bestFor": "American, Chinese, North Indian, Italian, Mughlai, Oriental, Continental, Desserts",
+      "menu": [
+        {
+          "id": 1,
+          "dishName": "Vitara Special",
+          "price": 100
+        },
+        {
+          "id": 2,
+          "dishName": "Veg Jaipuri",
+          "price": 200
+        },
+        {
+          "id": 3,
+          "dishName": "Fried Rice",
+          "price": 150
+        },
+        {
+          "id": 4,
+          "dishName": "Veg Loaded",
+          "price": 20
+        },
+        {
+          "id": 5,
+          "dishName": "Burger",
+          "price": 20
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "name": "Premdan Hotel",
+      "address": "Churchgate Junction, Mumbai",
+      "bestFor": "Asian, Continental, North Indian, Italian, Mughlai",
+      "menu": [
+        {
+          "id": 1,
+          "dishName": "Premdan Special",
+          "price": 100
+        },
+        {
+          "id": 2,
+          "dishName": "Veg Jaipuri",
+          "price": 200
+        },
+        {
+          "id": 3,
+          "dishName": "Fried Rice",
+          "price": 150
+        },
+        {
+          "id": 4,
+          "dishName": "Veg Loaded",
+          "price": 20
+        },
+        {
+          "id": 5,
+          "dishName": "Burger",
+          "price": 20
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "name": "Singh Residency",
+      "address": "East expressway, Ahmednagar",
+      "bestFor": "Bar Food, North Indian, Kebab, Mughlai, Biryani, Continental, Pizza",
+      "menu": [
+        {
+          "id": 1,
+          "dishName": "Singh Residency Special",
+          "price": 100
+        },
+        {
+          "id": 2,
+          "dishName": "Veg Maratha",
+          "price": 200
+        },
+        {
+          "id": 3,
+          "dishName": "Aloo Paratha",
+          "price": 150
+        },
+        {
+          "id": 4,
+          "dishName": "Roti",
+          "price": 20
+        },
+        {
+          "id": 5,
+          "dishName": "Ice-Cream",
+          "price": 20
+        }
+      ]
+    },
+    {
+      "id": 11,
+      "name": "Hotel Rajyog",
+      "address": "Hinjewadi, Pune",
+      "bestFor": "Brazilian, Steak, South American, Beverages, Desserts",
+      "menu": [
+        {
+          "id": 1,
+          "dishName": "Rajyog Special",
+          "price": 100
+        },
+        {
+          "id": 2,
+          "dishName": "Veg Jaipuri",
+          "price": 200
+        },
+        {
+          "id": 3,
+          "dishName": "Fried Rice",
+          "price": 150
+        },
+        {
+          "id": 4,
+          "dishName": "Veg Loaded",
+          "price": 20
+        },
+        {
+          "id": 5,
+          "dishName": "Burger",
+          "price": 20
+        }
+      ]
+    },
+    {
+      "id": 12,
+      "name": "KFC",
+      "address": "Marine Drive, Mumbai",
+      "bestFor": "Chinese, Fast Food, Pasta, North Indian, BBQ, Beverages",
+      "menu": [
+        {
+          "id": 1,
+          "dishName": "KFC (Marine Drive) Special",
+          "price": 100
+        },
+        {
+          "id": 2,
+          "dishName": "Veg Jaipuri",
+          "price": 200
+        },
+        {
+          "id": 3,
+          "dishName": "Fried Rice",
+          "price": 150
+        },
+        {
+          "id": 4,
+          "dishName": "Veg Loaded",
+          "price": 20
+        },
+        {
+          "id": 5,
+          "dishName": "Burger",
+          "price": 20
+        }
+      ]
+    },
+    {
+      "id": 13,
+      "name": "xyz restaurant",
+      "address": "Balewadi highstreet, Pune",
+      "bestFor": "North Indian, Italian, Continental, Bar Food, Desserts, Beverages",
+      "menu": [
+        {
+          "id": 1,
+          "dishName": "Veg Sandwich",
+          "price": 100
+        },
+        {
+          "id": 2,
+          "dishName": "Veg Maratha",
+          "price": 200
+        },
+        {
+          "id": 3,
+          "dishName": "Aloo Paratha",
+          "price": 150
+        },
+        {
+          "id": 4,
+          "dishName": "Roti",
+          "price": 20
+        },
+        {
+          "id": 5,
+          "dishName": "Ice-Cream",
+          "price": 20
+        }
+      ]
+    },
+    {
+      "email": "dmc@yopmail.com",
+      "password": "dmcc",
+      "restaurantName": "DMC Hotel",
+      "restaurantAddr": "Bengalore",
+      "fssaiNo": "1234567890",
+      "customerType": "Restaurant Owner",
+      "menu": [{
+        "id": 1,
+        "dishName": "Veg Sandwich",
+        "price": 100
+      },
+      {
+        "id": 2,
+        "dishName": "Veg Maratha",
+        "price": 200
+      }],
+      "bestFor": "North Indian, Italian, Continental, Bar Food, Desserts, Beverages",
+      "id": 14
+    }
+  ],
+  "orders": [
+    {
+      "items": [
+        {
+          "name": "Vitara Special",
+          "id": 1,
+          "price": 100,
+          "totalAmount": "0.00"
+        },
+        {
+          "name": "Veg Jaipuri",
+          "id": 2,
+          "price": 200,
+          "totalAmount": "100.00"
+        },
+        {
+          "name": "Fried Rice",
+          "id": 3,
+          "price": 150,
+          "totalAmount": "300.00"
+        }
+      ],
+      "totalAmount": 450,
+      "orderedBy": 10,
+      "status": "completed",
+      "fulfilledBy": "Hotel Vaishali",
+      "id": 1
+    },
+    {
+      "items": [
+        {
+          "name": "Vitara Special",
+          "id": 1,
+          "price": 100,
+          "totalAmount": "0.00"
+        },
+        {
+          "name": "Veg Jaipuri",
+          "id": 2,
+          "price": 200,
+          "totalAmount": "100.00"
+        },
+        {
+          "name": "Fried Rice",
+          "id": 3,
+          "price": 150,
+          "totalAmount": "300.00"
+        },
+        {
+          "name": "Ice-Cream",
+          "id": 5,
+          "price": 20,
+          "totalAmount": "450.00"
+        }
+      ],
+      "totalAmount": 470,
+      "orderedBy": 10,
+      "status": "placed",
+      "fulfilledBy": "xyz restaurant",
+      "id": 2
+    },
+    {
+      "items": [
+        {
+          "name": "Vitara Special",
+          "id": 1,
+          "price": 100,
+          "totalAmount": "0.00"
+        },
+        {
+          "name": "Veg Jaipuri",
+          "id": 2,
+          "price": 200,
+          "totalAmount": "100.00"
+        },
+        {
+          "name": "Fried Rice",
+          "id": 3,
+          "price": 150,
+          "totalAmount": "300.00"
+        },
+        {
+          "name": "Ice-Cream",
+          "id": 5,
+          "price": 20,
+          "totalAmount": "450.00"
+        },
+        {
+          "name": "Thai Special",
+          "id": 4,
+          "price": 20,
+          "totalAmount": "470.00"
+        }
+      ],
+      "totalAmount": 490,
+      "orderedBy": 10,
+      "status": "accepted",
+      "fulfilledBy": "xyz restaurant",
+      "id": 3
+    },
+    {
+      "items": [
+        {
+          "name": "Vitara Special",
+          "id": 1,
+          "price": 100,
+          "totalAmount": "0.00"
+        },
+        {
+          "name": "Veg Jaipuri",
+          "id": 2,
+          "price": 200,
+          "totalAmount": "100.00"
+        },
+        {
+          "name": "Fried Rice",
+          "id": 3,
+          "price": 150,
+          "totalAmount": "300.00"
+        },
+        {
+          "name": "Ice-Cream",
+          "id": 5,
+          "price": 20,
+          "totalAmount": "450.00"
+        },
+        {
+          "name": "Thai Special",
+          "id": 4,
+          "price": 20,
+          "totalAmount": "470.00"
+        }
+      ],
+      "totalAmount": 490,
+      "orderedBy": 10,
+      "status": "completed",
+      "fulfilledBy": "xyz restaurant",
+      "id": 4
+    },
+    {
+      "items": [
+        {
+          "name": "Veg Sandwich",
+          "id": 1,
+          "price": 100,
+          "totalAmount": "0.00"
+        }
+      ],
+      "totalAmount": 100,
+      "orderedBy": 10,
+      "status": "accepted",
+      "fulfilledBy": "Hotel Vaishali, FC Road, Pune",
+      "customerName": "ms@yopmail.com",
+      "id": 5
+    },
+    {
+      "items": [
+        {
+          "name": "Paneer Bhurji",
+          "id": 1,
+          "price": 100,
+          "totalAmount": "0.00"
+        }
+      ],
+      "totalAmount": 100,
+      "orderedBy": 10,
+      "status": "completed",
+      "fulfilledBy": "Hotel Vaishali, FC Road, Pune",
+      "customerName": "vk@yopmail.com",
+      "id": 6
+    },
+    {
+      "items": [
+        {
+          "name": "Paneer Bhurji",
+          "id": 1,
+          "price": 100,
+          "totalAmount": "0.00"
+        },
+        {
+          "name": "Roti",
+          "id": 4,
+          "price": 20,
+          "totalAmount": "100.00"
+        }
+      ],
+      "totalAmount": 120,
+      "orderedBy": 10,
+      "status": "rejected",
+      "customerName": "min@yopmail.com",
+      "fulfilledBy": "Hotel Vaishali, FC Road, Pune",
+      "id": 7
+    },
+    {
+      "items": [
+        {
+          "name": "Paneer Bhurji",
+          "id": 1,
+          "price": 100,
+          "totalAmount": "0.00"
+        },
+        {
+          "name": "Roti",
+          "id": 4,
+          "price": 20,
+          "totalAmount": "100.00"
+        }
+      ],
+      "totalAmount": 120,
+      "orderedBy": 10,
+      "status": "accepted",
+      "fulfilledBy": "xyz restaurant",
+      "id": 8
+    },
+    {
+      "items": [
+        {
+          "name": "Paneer Bhurji",
+          "id": 1,
+          "price": 200,
+          "totalAmount": "0.00"
+        },
+        {
+          "name": "Roti",
+          "id": 4,
+          "price": 20,
+          "totalAmount": "100.00"
+        },
+        {
+          "name": "Veg Jaipuri",
+          "id": 2,
+          "price": 200,
+          "totalAmount": "220.00"
+        },
+        {
+          "name": "Fried Rice",
+          "id": 3,
+          "price": 150,
+          "totalAmount": "420.00"
+        }
+      ],
+      "totalAmount": 570,
+      "orderedBy": 10,
+      "status": "accepted",
+      "customerName": "max@yopmail.com",
+      "fulfilledBy": "Hotel Vaishali, FC Road, Pune",
+      "id": 9
+    },
+    {
+      "items": [
+        {
+          "name": "Ice-Cream",
+          "id": 5,
+          "price": 20,
+          "totalAmount": "0.00"
+        },
+        {
+          "name": "Aloo Paratha",
+          "id": 3,
+          "price": 150,
+          "totalAmount": "20.00"
+        }
+      ],
+      "totalAmount": 170,
+      "orderedBy": 13,
+      "customerName": "test@yopmail.com",
+      "status": "accepted",
+      "fulfilledBy": "Hotel Vaishali, FC Road, Pune",
+      "id": 10
+    }
+  ]
+}
