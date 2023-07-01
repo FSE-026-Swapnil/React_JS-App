@@ -22,12 +22,13 @@ pipeline {
         }
         stage('SonarQube analysis started ...') {
             environment {
-                def scannerHome = tool 'My_SonarQube'
+                def scannerHome = tool 'My_SonarQube_Scanner'
             }
             steps {
-                withSonarQubeEnv('My_SonarQube') {
+                echo "scannerHome ${scannerHome}"
+                withSonarQubeEnv('My_SonarQube_Server') {
                     bat '''
-                    ${scannerHome}/bin/sonar-scanner \
+                     ${scannerHome}/bin/sonar-scanner \
                     -D sonar.projectKey=React_Jenkins \
                     -D sonar.projectName=React_Jenkins \
                     -D sonar.sources=./src \
