@@ -20,9 +20,9 @@ pipeline {
             }
             
         }
-        stage('SonarQube analysis') {
+        stage('SonarQube analysis started ...') {
             environment {
-                scannerHome = tool 'SonarQube_4.3.0'
+                def scannerHome = tool 'My_SonarQube'
             }
             steps {
                 withSonarQubeEnv('My_SonarQube') {
