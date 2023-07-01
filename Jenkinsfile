@@ -28,13 +28,7 @@ pipeline {
                 echo "scannerHome ${scannerHome}"
                 withSonarQubeEnv('My_SonarQube_Server') {
                     bat '''
-                     ${scannerHome}/bin/sonar-scanner \
-                    -D sonar.projectKey=React_Jenkins \
-                    -D sonar.projectName=React_Jenkins \
-                    -D sonar.sources=./src \
-                    -D sonar.test.inclusions=**/*.spec.ts
-                    -D sonar.exclusions=**/node_modules/**
-                    -D sonar.testExecutionReportPaths=reports/sonarqube_report.xml
+                    bat "${scannerHome}/bin/sonar-scanner.bat"
                     '''
                 }
             }
