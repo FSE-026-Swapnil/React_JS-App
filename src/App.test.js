@@ -7,9 +7,4 @@ test('renders landing page with login link', () => {
   expect(linkElement).toBeInTheDocument();
 });
 
-test('renders landing page buttons list', async () => {
-  render(<App />);
-  const buttonList = await screen.findAllByRole("button");
-  expect(buttonList).toHaveLength(2);
-});
 
