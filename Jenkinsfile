@@ -20,6 +20,15 @@ pipeline {
             }
             
         }
+        stage('Selenium Tests') {
+        steps {
+                // Run Selenium tests
+                bat 'npm install -g selenium-standalone@latest'
+                bat 'selenium-standalone install'
+                bat 'selenium-standalone start &'
+                bat 'npm test'
+            }
+        }
         stage('SonarQube analysis started ...') {
             environment {
                 def scannerHome = tool 'My_SonarQube_Scanner'
