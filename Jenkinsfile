@@ -22,14 +22,9 @@ pipeline {
         }
         stage('SonarQube Analysis') {
             steps {
-                // Run SonarQube scanner
-                withSonarQubeEnv('My_SonarQube_Scanner') {
-                // Replace the placeholders with your SonarQube project details
-                bat 'C:\\sonarscanner\\bin\\sonar-scanner.bat \
-                    -Dsonar.projectKey="ReactFronteEnd" \
-                    -Dsonar.sources=./src \
-                    -Dsonar.host.url=http://192.168.1.3:9000 \
-                    -Dsonar.login=sqa_25d6a3c056915e2648cf1df193f4a76f5b892608'
+                def scannerHome = tool 'My_SonarQube_Scanner';
+                withSonarQubeEnv('My_SonarQube_Server') {
+                    bat "${scannerHome}/bin/sonar-scanner"
                 }
             }
         }
