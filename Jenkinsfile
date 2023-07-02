@@ -26,7 +26,7 @@ pipeline {
             }
             steps {
                 withSonarQubeEnv('My_SonarQube_Server') {
-                    bat 'sonar-scanner \
+                   bat 'C:\\SonarQube\\sonar-scanner-{4.3.0.2102}\\bin\\sonar-scanner.bat \
                     -Dsonar.projectKey="ReactFronteEnd" \
                     -Dsonar.sources=./src \
                     -Dsonar.host.url=http://192.168.1.3:9000 \
