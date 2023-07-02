@@ -28,12 +28,10 @@ pipeline {
                 withSonarQubeEnv('My_SonarQube_Server') {
                     bat """
                     ${scannerHome}/bin/sonar-scanner
-                    -Dsonar.login=admin 
-                    -Dsonar.password=admin123
                     -Dsonar.projectKey="React_Frontend" \
                     -Dsonar.sources="./src" \
                     -Dsonar.host.url="http://192.168.1.3:9000" \
-                    -Dsonar.token="sqa_25d6a3c056915e2648cf1df193f4a76f5b892608"
+                    -Dsonar.login="sqa_25d6a3c056915e2648cf1df193f4a76f5b892608"
                     """
                 }
             }
