@@ -21,15 +21,12 @@ pipeline {
             
         }
         stage('SonarQube analysis started ...') {
-            environment {
-                def scannerHome = tool 'My_SonarQube_Scanner'
+            tools {
+                sonarQube 'My_SonarQube_Scanner'
             }
             steps {
-                echo "scannerHome ${scannerHome}"
                 withSonarQubeEnv('My_SonarQube_Server') {
-                    bat '''
-                    "${scannerHome}/bin/sonar-scanner"
-                    '''
+                bat 'sonar-scanner'
                 }
             }
         }
