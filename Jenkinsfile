@@ -21,12 +21,14 @@ pipeline {
             
         }
         stage('SonarQube analysis started ...') {
-            tools {
-                sonarQube 'My_SonarQube_Scanner'
+            environment {
+                def scannerHome = tool 'My_SonarQube_Scanner'
             }
             steps {
                 withSonarQubeEnv('My_SonarQube_Server') {
-                bat 'sonar-scanner'
+                    bat '''
+                    "var/lib/jenkins/tools/hudson.plugins.sonar.SonarRunnerInstallation/SonarQube/bin/sonar-scanner"
+                    '''
                 }
             }
         }
