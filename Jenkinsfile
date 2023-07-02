@@ -22,12 +22,12 @@ pipeline {
         }
         stage('SonarQube analysis started ...') {
             environment {
-                def scannerHome = tool 'My_SonarQube_Scanner'
+                def scannerHome = tool name: 'My_SonarQube_Scanner', type: 'hudson.plugins.sonar.SonarRunnerInstallation'
             }
             steps {
                 withSonarQubeEnv('My_SonarQube_Server') {
                     bat '''
-                    "var/lib/jenkins/tools/hudson.plugins.sonar.SonarRunnerInstallation/SonarQube/bin/sonar-scanner"
+                     ${scannerHome}/bin/sonar-scanner \
                     '''
                 }
             }
