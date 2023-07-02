@@ -20,20 +20,27 @@ pipeline {
             }
             
         }
-        stage('SonarQube analysis started ...') {
-            environment {
-                def scannerHome = tool name: 'My_SonarQube_Scanner', type: 'hudson.plugins.sonar.SonarRunnerInstallation'
-            }
+        stage('SonarQube Analysis') {
             steps {
-                withSonarQubeEnv('My_SonarQube_Server') {
-                   bat 'C:\\SonarQube\\sonar-scanner-{4.3.0.2102}\\bin\\sonar-scanner.bat \
+                // Run SonarQube scanner
+                withSonarQubeEnv('My_SonarQube_Scanner') {
+                // Replace the placeholders with your SonarQube project details
+                bat 'C:\\sonarscanner\\bin\\sonar-scanner.bat \
                     -Dsonar.projectKey="ReactFronteEnd" \
                     -Dsonar.sources=./src \
                     -Dsonar.host.url=http://192.168.1.3:9000 \
                     -Dsonar.login=sqa_25d6a3c056915e2648cf1df193f4a76f5b892608'
                 }
             }
-            
+        }
+        stage('Selenium Tests') {
+            steps {
+                // Run Selenium tests
+                bat 'npm install -g selenium-standalone@latest'
+                bat 'selenium-standalone install'
+                bat 'selenium-standalone start &'
+                bat 'npm test'
+            }
         }
          stage('Deploy') { 
             steps {
