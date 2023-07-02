@@ -27,10 +27,12 @@ pipeline {
             steps {
                 withSonarQubeEnv('My_SonarQube_Server') {
                     bat """
-                    ${scannerHome}/bin/sonar-scanner
-                    -Dsonar.projectKey=React_Frontend \
-                    -Dsonar.sources=./src \
-                    -Dsonar.host.url=http://192.168.1.3:9000 \
+                    ${scannerHome}/bin/sonar-scanner \\
+                    -Dsonar.projectKey='React_Frontend' \\
+                    -Dsonar.sources='./src' \\
+                    -Dsonar.host.url='http://192.168.1.3:9000' \\
+                    -Dsonar.login='admin' \\
+                    -Dsonar.password='admin123'
                     """
                 }
             }
