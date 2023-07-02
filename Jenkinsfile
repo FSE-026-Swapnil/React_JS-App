@@ -28,7 +28,7 @@ pipeline {
                 echo "scannerHome ${scannerHome}"
                 withSonarQubeEnv('My_SonarQube_Server') {
                     bat '''
-                    bat "${scannerHome}/bin/sonar-scanner.bat"
+                    bat "${scannerHome}/bin/sonar-scanner"
                     '''
                 }
             }
